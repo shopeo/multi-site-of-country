@@ -1,0 +1,16 @@
+/.wordpress-org
+/.git
+/.github
+/node_modules
+/src/assets
+/languages/README.md
+.distignore
+.gitignore
+.editorconfig
+README.md
+LICENSE
+mix-manifest.json
+package.json
+package-lock.json
+composer.json
+composer-lock.json

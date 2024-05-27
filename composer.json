@@ -1,0 +1,35 @@
+{
+	"name": "shopeo/multi-site-of-country",
+	"autoload": {
+		"psr-4": {
+			"Shopeo\\MultiSiteOfCountry\\": "src/"
+		}
+	},
+	"scripts": {
+		"phpcs": [
+			"vendor/bin/phpcs --extensions=php -s -p"
+		],
+		"phpcbf": [
+			"vendor/bin/phpcbf -p"
+		]
+	},
+	"authors": [
+		{
+			"name": "SHOPEO",
+			"email": "hello@shopeo.cn",
+			"homepage": "https://shopeo.cn"
+		}
+	],
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"squizlabs/php_codesniffer": "^3.10",
+		"phpunit/phpunit": "^11.1",
+		"phpunit/php-code-coverage": "^11.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
