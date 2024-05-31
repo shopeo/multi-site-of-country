@@ -187,7 +187,7 @@ add_action( 'wp_validate_site_data', 'multi_site_validate_site_data', 10, 3 );
 if ( ! function_exists( 'save_site_country_on_creation' ) ) {
 	function save_site_country_on_creation( $new_site ) {
 		if ( isset( $_POST['country'] ) ) {
-			update_blog_option( $new_site->blog_id, 'country', $_POST['country'] );
+			update_blog_option( $new_site->blog_id, 'country', sanitize_text_field( $_POST['country'] ) );
 		}
 	}
 }
