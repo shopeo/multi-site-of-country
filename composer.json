@@ -31,5 +31,8 @@
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
+	},
+	"require": {
+		"umpirsky/country-list": "^2.0"
 	}
 }
