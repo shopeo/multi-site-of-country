@@ -166,8 +166,6 @@ add_action( 'network_site_new_form', 'add_country_field_to_site_creation_form' )
 
 if ( ! function_exists( 'multi_site_validate_site_data' ) ) {
 	function multi_site_validate_site_data( $errors, $data, $old_site ) {
-		error_log( print_r( $data, true ) );
-		error_log( print_r( $old_site, true ) );
 		if ( $_POST['country'] && $_POST['country'] != '' ) {
 			$country_code = sanitize_text_field( $_POST['country'] );
 			$sites        = get_sites( array( 'number' => 0 ) );
